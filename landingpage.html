@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline Games Hub</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 10px;
+      background: linear-gradient(45deg, #ff0048, #5200ff);
+      border-radius: 0 0 25px 25px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .games-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .game-card {
+      background: #1c1c1e;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .game-card:hover {
+      transform: scale(1.07);
+      background: #272729;
+    }
+
+    .game-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .play-btn {
+      background: #ff006a;
+      padding: 8px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎮 Offline Games Hub</h1>
+    <p>10 Games • Offline • Fun & Fast</p>
+  </header>
+
+  <div class="games-container">
+
+    <!-- Game Cards (Add 10 Games) -->
+    <div class="game-card" onclick="openGame(1)">
+      <img src="game1.png" alt="Game 1" />
+      <h3>Car Race</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(2)">
+      <img src="game2.png" alt="Game 2" />
+      <h3>Ball Shooter</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="snake.py">
+      <img src="game3.png" alt="Game 3" />
+      <h3>Snake</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(4)">
+      <img src="game4.png" alt="Game 4" />
+      <h3>Tic Tac Toe</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(5)">
+      <img src="game5.png" alt="Game 5" />
+      <h3>Sudoku</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(6)">
+      <img src="game6.png" alt="Game 6" />
+      <h3>Puzzle</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(7)">
+      <img src="game7.png" alt="Game 7" />
+      <h3>Memory Match</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(8)">
+      <img src="game8.png" alt="Game 8" />
+      <h3>2048</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(9)">
+      <img src="game9.png" alt="Game 9" />
+      <h3>Chess</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+    <div class="game-card" onclick="openGame(10)">
+      <img src="game10.png" alt="Game 10" />
+      <h3>Ludo</h3>
+      <div class="play-btn">Play</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Offline Games Hub
+  </footer>
+
+  <script>
+    function openGame(id) {
+      alert("Open Game " + id + " (link here)");
+      // Example:
+      // window.location.href = "games/game" + id + "/index.html";
+    }
+  </script>
+
+</body>
+</html>
